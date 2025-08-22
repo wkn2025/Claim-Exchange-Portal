@@ -1,0 +1,551 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1440 900" width="1440" height="900" fill="none">
+  <rect width="1440" height="900" fill="#fff"></rect>
+  <g opacity="100%">
+    <rect x="0" y="0" width="1440" height="52" fill="#fff" filter="url(#filter_dshadow_6_0_4_0000001a)"></rect>
+    <rect x="0" y="52" width="1440" height="0" fill="#e5e7eb"></rect>
+  </g>
+  <g opacity="100%">
+    <text x="16" y="31.5" font-family="Open Sans" font-size="14" fill="#030303" letter-spacing="0" font-weight="normal" font-style="normal">Home</text>
+  </g>
+  <g opacity="100%">
+    <text x="82" y="31.5" font-family="Open Sans" font-size="14" fill="#030303" letter-spacing="0" font-weight="normal" font-style="normal">My Approvals</text>
+  </g>
+  <g opacity="100%">
+    <text x="199" y="31.5" font-family="Open Sans" font-size="14" fill="#030303" letter-spacing="0" font-weight="normal" font-style="normal">Pending Approvals</text>
+  </g>
+  <g opacity="100%">
+    <text x="336" y="31.5" font-family="Open Sans" font-size="14" fill="#030303" letter-spacing="0" font-weight="normal" font-style="normal">Medical Records Tracker</text>
+  </g>
+  <g opacity="100%">
+    <text x="1277" y="31.5" font-family="Open Sans" font-size="14" fill="#030303" letter-spacing="0" font-weight="normal" font-style="normal">THO</text>
+  </g>
+  <g opacity="100%">
+    <text x="1330" y="31.5" font-family="Open Sans" font-size="14" fill="#030303" letter-spacing="0" font-weight="normal" font-style="normal">VIKING</text>
+  </g>
+  <g opacity="100%">
+    <text x="563" y="118.5" font-family="Open Sans" font-size="48" fill="#030303" letter-spacing="0" font-weight="500" font-style="normal">
+      <tspan x="563">All Entries</tspan>
+    </text>
+  </g>
+  <g opacity="100%">
+    <rect x="24" y="156" width="2061" height="73" fill="#f9fafb" stroke="#e5e7eb" stroke-width="0" rx="0" filter="url(#filter_dshadow_0_0_0_00000014)"></rect>
+  </g>
+  <g opacity="100%">
+    <text x="127" y="201.5" font-family="Open Sans" font-size="12" fill="#000" letter-spacing="0.6" font-weight="500" font-style="normal">UHAP ID</text>
+  </g>
+  <g opacity="100%">
+    <text x="34" y="196.5" font-family="Open Sans" font-size="12" fill="#6b7280" letter-spacing="0.6" font-weight="500" font-style="normal">
+      <tspan x="39">DAYS SINCE</tspan>
+    </text>
+    <text x="34" y="212.5" font-family="Open Sans" font-size="12" fill="#6b7280" letter-spacing="0.6" font-weight="500" font-style="normal">
+      <tspan x="49">IMPORT</tspan>
+    </text>
+  </g>
+  <g opacity="100%">
+    <text x="226" y="202.5" font-family="Open Sans" font-size="12" fill="#6b7280" letter-spacing="0.6" font-weight="500" font-style="normal">CASE NUMBER</text>
+  </g>
+  <g opacity="100%">
+    <text x="362" y="201.5" font-family="Open Sans" font-size="12" fill="#000" letter-spacing="0.6" font-weight="500" font-style="normal">CLIENT ID</text>
+  </g>
+  <g opacity="100%">
+    <text x="490" y="201.5" font-family="Open Sans" font-size="12" fill="#6b7280" letter-spacing="0.6" font-weight="500" font-style="normal">PATIENT</text>
+  </g>
+  <g opacity="100%">
+    <text x="613" y="201.5" font-family="Open Sans" font-size="12" fill="#6b7280" letter-spacing="0.6" font-weight="500" font-style="normal">TREATMENT DATE</text>
+  </g>
+  <g opacity="100%">
+    <text x="741" y="201.5" font-family="Open Sans" font-size="12" fill="#6b7280" letter-spacing="0.6" font-weight="500" font-style="normal">STATUS GLOBO</text>
+  </g>
+  <g opacity="100%">
+    <text x="848" y="184.5" font-family="Open Sans" font-size="12" fill="#6b7280" letter-spacing="0.6" font-weight="500" font-style="normal">
+      <tspan x="863">PAYABLE</tspan>
+    </text>
+    <text x="848" y="200.5" font-family="Open Sans" font-size="12" fill="#6b7280" letter-spacing="0.6" font-weight="500" font-style="normal">
+      <tspan x="856">AMOUNT /</tspan>
+    </text>
+    <text x="848" y="216.5" font-family="Open Sans" font-size="12" fill="#6b7280" letter-spacing="0.6" font-weight="500" font-style="normal">
+      <tspan x="874">FEES</tspan>
+    </text>
+  </g>
+  <g opacity="100%">
+    <text x="957" y="202.5" font-family="Open Sans" font-size="12" fill="#000" letter-spacing="0.6" font-weight="500" font-style="normal">TOTAL</text>
+  </g>
+  <g opacity="100%">
+    <text x="1054" y="201.5" font-family="Open Sans" font-size="12" fill="#6b7280" letter-spacing="0.6" font-weight="500" font-style="normal">CLAIM IMAGE</text>
+  </g>
+  <g opacity="100%">
+    <text x="1161" y="201.5" font-family="Open Sans" font-size="12" fill="#6b7280" letter-spacing="0.6" font-weight="500" font-style="normal">COVERAGE DECISION</text>
+  </g>
+  <g opacity="100%">
+    <text x="1608" y="168.5" font-family="Open Sans" font-size="12" fill="#6b7280" letter-spacing="0.6" font-weight="500" font-style="normal">COMMENT</text>
+  </g>
+  <g opacity="100%">
+    <text x="1818" y="168.5" font-family="Open Sans" font-size="12" fill="#6b7280" letter-spacing="0.6" font-weight="500" font-style="normal">ACTIONS</text>
+  </g>
+  <g opacity="100%">
+    <rect x="24" y="228" width="2061" height="1" fill="#e5e7eb" rx="0" filter="url(#filter_dshadow_0_0_0_00000014)"></rect>
+  </g>
+  <g opacity="100%">
+    <text x="237" y="262.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">1687985</text>
+  </g>
+  <g opacity="100%">
+    <text x="63" y="266.5" font-family="Open Sans" font-size="14" fill="#111827" letter-spacing="0" font-weight="500" font-style="normal">5</text>
+  </g>
+  <g opacity="100%">
+    <text x="348" y="260.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">909001245873</text>
+  </g>
+  <g opacity="100%">
+    <text x="479" y="260.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">Thor Odinsson</text>
+  </g>
+  <g opacity="100%">
+    <text x="623" y="251.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">2023-09-15 /</text>
+    <text x="623" y="271.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">2023-09-15</text>
+  </g>
+  <g opacity="100%">
+    <text x="737" y="252.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">
+      <tspan x="753">Settled</tspan>
+    </text>
+    <text x="737" y="272.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">
+      <tspan x="737">2023-10-01</tspan>
+    </text>
+  </g>
+  <g opacity="100%">
+    <text x="848" y="257.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">US$ 157,59 /</text>
+    <text x="848" y="277.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">US$ 14,54</text>
+  </g>
+  <g opacity="100%">
+    <text x="1195" y="257.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">Covered</text>
+  </g>
+  <g opacity="100%">
+    <rect filter="url(#filter_dshadow_0_0_0_00000014)" x="1632" y="245" width="162" height="40" fill="#fff" rx="20" stroke="#e5e7eb" stroke-width="0"></rect>
+    <text x="1640" y="270.5" font-family="Open Sans" font-size="14" fill="#94a3b8" letter-spacing="0" font-weight="normal" font-style="normal">
+      <tspan>Add comment</tspan>
+    </text>
+  </g>
+  <g opacity="100%">
+    <rect filter="url(#filter_dshadow_0_0_0_00000014)" x="1842" y="255" width="59" height="24" fill="#fff" stroke="#e5e7eb" stroke-width="0" rx="12"></rect>
+    <text x="1850.5" y="271.5" font-family="Open Sans" font-size="12" fill="#030303" letter-spacing="0" font-weight="600" font-style="normal">
+      <tspan>Update</tspan>
+    </text>
+  </g>
+  <g opacity="100%">
+    <rect filter="url(#filter_dshadow_0_0_0_00000014)" x="1904" y="255" width="90" height="24" fill="#fff" stroke="#e5e7eb" stroke-width="0" rx="12"></rect>
+    <text x="1912" y="271.5" font-family="Open Sans" font-size="12" fill="#030303" letter-spacing="0" font-weight="600" font-style="normal">
+      <tspan>Wrong Claim</tspan>
+    </text>
+  </g>
+  <g opacity="100%">
+    <rect filter="url(#filter_dshadow_0_0_0_00000014)" x="1997" y="255" width="63" height="24" fill="#fff" stroke="#e5e7eb" stroke-width="0" rx="12"></rect>
+    <text x="2005" y="271.5" font-family="Open Sans" font-size="12" fill="#030303" letter-spacing="0" font-weight="600" font-style="normal">
+      <tspan>Remove</tspan>
+    </text>
+  </g>
+  <g opacity="100%">
+    <text x="234" y="346.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">1688798</text>
+  </g>
+  <g opacity="100%">
+    <text x="63" y="350.5" font-family="Open Sans" font-size="14" fill="#111827" letter-spacing="0" font-weight="500" font-style="normal">12</text>
+  </g>
+  <g opacity="100%">
+    <text x="348" y="344.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">909001547897</text>
+  </g>
+  <g opacity="100%">
+    <text x="483" y="344.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">Odin BorrsonBorrson</text>
+  </g>
+  <g opacity="100%">
+    <text x="623" y="335.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">2023-09-10 /</text>
+    <text x="623" y="355.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">2023-09-10</text>
+  </g>
+  <g opacity="100%" mask="url(#mask_2874puwvqyc)">
+    <text x="737" y="338.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">Settled</text>
+    <text x="737" y="358.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">2023-09-</text>
+    <text x="737" y="378.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">13</text>
+    <defs>
+      <mask id="mask_2874puwvqyc">
+        <rect x="737" y="323" width="74" height="50" fill="white"></rect>
+      </mask>
+    </defs>
+  </g>
+  <g opacity="100%" mask="url(#mask_dnpv1kmo8)">
+    <text x="848" y="342.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">US$ 1.479,59</text>
+    <text x="848" y="362.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">/ US$ 8,31</text>
+    <defs>
+      <mask id="mask_dnpv1kmo8">
+        <rect x="848" y="327" width="89" height="37" fill="white"></rect>
+      </mask>
+    </defs>
+  </g>
+  <g opacity="100%">
+    <text x="1195" y="350.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">Denied</text>
+  </g>
+  <g opacity="100%">
+    <rect filter="url(#filter_dshadow_0_0_0_00000014)" x="1632" y="323" width="162" height="40" fill="#fff" rx="20" stroke="#e5e7eb" stroke-width="0"></rect>
+    <text x="1640" y="348.5" font-family="Open Sans" font-size="14" fill="#94a3b8" letter-spacing="0" font-weight="normal" font-style="normal">
+      <tspan>Add comment</tspan>
+    </text>
+  </g>
+  <g opacity="100%">
+    <text x="63" y="426.5" font-family="Open Sans" font-size="14" fill="#111827" letter-spacing="0" font-weight="500" font-style="normal">20</text>
+  </g>
+  <rect></rect>
+  <g opacity="100%">
+    <text x="118" y="262.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">12345670</text>
+  </g>
+  <g opacity="100%" mask="url(#mask_o2c43prd0i)">
+    <text x="117" y="346.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">14368790</text>
+    <text x="117" y="366.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal"></text>
+    <defs>
+      <mask id="mask_o2c43prd0i">
+        <rect x="117" y="331" width="65" height="20" fill="white"></rect>
+      </mask>
+    </defs>
+  </g>
+  <g opacity="100%">
+    <text x="117" y="426.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">14356987</text>
+  </g>
+  <g opacity="100%">
+    <text x="237" y="426.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">1654587</text>
+  </g>
+  <g opacity="100%">
+    <text x="355" y="422.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">909001365780</text>
+  </g>
+  <g opacity="100%">
+    <text x="479" y="420.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">Loki Laufeyjarson</text>
+  </g>
+  <g opacity="100%">
+    <text x="623" y="413.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">2023-08-25 /</text>
+    <text x="623" y="433.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">2023-08-29</text>
+  </g>
+  <g opacity="100%">
+    <text x="737" y="417.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">Pay</text>
+  </g>
+  <g opacity="100%">
+    <text x="847" y="420.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">US$ 987,47 /</text>
+    <text x="847" y="440.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">US$ 23,53</text>
+  </g>
+  <g opacity="100%">
+    <text x="1176" y="420.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">Partially denied</text>
+  </g>
+  <g opacity="100%">
+    <rect filter="url(#filter_dshadow_0_0_0_00000014)" x="1632" y="401" width="162" height="40" fill="#fff" rx="20" stroke="#e5e7eb" stroke-width="0"></rect>
+    <text x="1640" y="426.5" font-family="Open Sans" font-size="14" fill="#94a3b8" letter-spacing="0" font-weight="normal" font-style="normal">
+      <tspan>Add comment</tspan>
+    </text>
+  </g>
+  <g opacity="100%">
+    <text x="1124" y="839.5" font-family="Open Sans" font-size="14" fill="#030303" letter-spacing="0" font-weight="normal" font-style="normal">Entries per page:</text>
+  </g>
+  <g opacity="100%">
+    <rect filter="url(#filter_dshadow_0_0_0_00000014)" x="1250" y="824" width="46" height="24" fill="#fff" stroke="#e5e7eb" stroke-width="0" rx="12"></rect>
+    <text x="1266" y="840.5" font-family="Open Sans" font-size="12" fill="#030303" letter-spacing="0" font-weight="600" font-style="normal">
+      <tspan>10</tspan>
+    </text>
+  </g>
+  <g opacity="100%">
+    <rect filter="url(#filter_dshadow_0_0_0_00000014)" x="1312" y="824" width="46" height="24" fill="#c6c922" stroke="#e5e7eb" stroke-width="0" rx="12"></rect>
+    <text x="1328" y="840.5" font-family="Open Sans" font-size="12" fill="#030303" letter-spacing="0" font-weight="600" font-style="normal">
+      <tspan>20</tspan>
+    </text>
+  </g>
+  <g opacity="100%">
+    <rect filter="url(#filter_dshadow_0_0_0_00000014)" x="1374" y="824" width="46" height="24" fill="#fff" stroke="#e5e7eb" stroke-width="0" rx="12"></rect>
+    <text x="1390" y="840.5" font-family="Open Sans" font-size="12" fill="#030303" letter-spacing="0" font-weight="600" font-style="normal">
+      <tspan>50</tspan>
+    </text>
+  </g>
+  <g opacity="100%">
+    <text x="948" y="259.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">US$ 172,13</text>
+  </g>
+  <g opacity="100%">
+    <text x="948" y="346.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">US$ 1.487,90</text>
+  </g>
+  <g opacity="100%">
+    <text x="948" y="421.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">US$ 1.011,00</text>
+  </g>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="40" height="40" fill="#ff3b30" x="1076" y="237" opacity="100%">
+    <path d="M88 304H80V256H88C101.3 256 112 266.7 112 280C112 293.3 101.3 304 88 304zM192 256H200C208.8 256 216 263.2 216 272V336C216 344.8 208.8 352 200 352H192V256zM224 0V128C224 145.7 238.3 160 256 160H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64C0 28.65 28.65 0 64 0H224zM64 224C55.16 224 48 231.2 48 240V368C48 376.8 55.16 384 64 384C72.84 384 80 376.8 80 368V336H88C118.9 336 144 310.9 144 280C144 249.1 118.9 224 88 224H64zM160 368C160 376.8 167.2 384 176 384H200C226.5 384 248 362.5 248 336V272C248 245.5 226.5 224 200 224H176C167.2 224 160 231.2 160 240V368zM288 224C279.2 224 272 231.2 272 240V368C272 376.8 279.2 384 288 384C296.8 384 304 376.8 304 368V320H336C344.8 320 352 312.8 352 304C352 295.2 344.8 288 336 288H304V256H336C344.8 256 352 248.8 352 240C352 231.2 344.8 224 336 224H288zM256 0L384 128H256V0z"></path>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="40" height="40" fill="#ff3b30" x="1080" y="321" opacity="100%">
+    <path d="M88 304H80V256H88C101.3 256 112 266.7 112 280C112 293.3 101.3 304 88 304zM192 256H200C208.8 256 216 263.2 216 272V336C216 344.8 208.8 352 200 352H192V256zM224 0V128C224 145.7 238.3 160 256 160H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64C0 28.65 28.65 0 64 0H224zM64 224C55.16 224 48 231.2 48 240V368C48 376.8 55.16 384 64 384C72.84 384 80 376.8 80 368V336H88C118.9 336 144 310.9 144 280C144 249.1 118.9 224 88 224H64zM160 368C160 376.8 167.2 384 176 384H200C226.5 384 248 362.5 248 336V272C248 245.5 226.5 224 200 224H176C167.2 224 160 231.2 160 240V368zM288 224C279.2 224 272 231.2 272 240V368C272 376.8 279.2 384 288 384C296.8 384 304 376.8 304 368V320H336C344.8 320 352 312.8 352 304C352 295.2 344.8 288 336 288H304V256H336C344.8 256 352 248.8 352 240C352 231.2 344.8 224 336 224H288zM256 0L384 128H256V0z"></path>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="40" height="40" fill="#ff3b30" x="1080" y="399" opacity="100%">
+    <path d="M88 304H80V256H88C101.3 256 112 266.7 112 280C112 293.3 101.3 304 88 304zM192 256H200C208.8 256 216 263.2 216 272V336C216 344.8 208.8 352 200 352H192V256zM224 0V128C224 145.7 238.3 160 256 160H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64C0 28.65 28.65 0 64 0H224zM64 224C55.16 224 48 231.2 48 240V368C48 376.8 55.16 384 64 384C72.84 384 80 376.8 80 368V336H88C118.9 336 144 310.9 144 280C144 249.1 118.9 224 88 224H64zM160 368C160 376.8 167.2 384 176 384H200C226.5 384 248 362.5 248 336V272C248 245.5 226.5 224 200 224H176C167.2 224 160 231.2 160 240V368zM288 224C279.2 224 272 231.2 272 240V368C272 376.8 279.2 384 288 384C296.8 384 304 376.8 304 368V320H336C344.8 320 352 312.8 352 304C352 295.2 344.8 288 336 288H304V256H336C344.8 256 352 248.8 352 240C352 231.2 344.8 224 336 224H288zM256 0L384 128H256V0z"></path>
+  </svg>
+  <g opacity="100%">
+    <text x="1312" y="201.5" font-family="Open Sans" font-size="12" fill="#6b7280" letter-spacing="0.6" font-weight="500" font-style="normal">LAST UPDATE</text>
+  </g>
+  <g opacity="100%">
+    <text x="1302" y="258.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">
+      <tspan x="1309">THO / 2025-08-</tspan>
+    </text>
+    <text x="1302" y="278.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">
+      <tspan x="1331">13 16:34</tspan>
+    </text>
+  </g>
+  <g opacity="100%">
+    <text x="1303" y="342.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">
+      <tspan x="1310">THO / 2025-08-</tspan>
+    </text>
+    <text x="1303" y="362.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">
+      <tspan x="1332">10 16:20</tspan>
+    </text>
+  </g>
+  <g opacity="100%">
+    <text x="1302" y="416.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">
+      <tspan x="1309">THO / 2025-08-</tspan>
+    </text>
+    <text x="1302" y="436.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">
+      <tspan x="1331">10 16:59</tspan>
+    </text>
+  </g>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="13" height="13" fill="#023f81" x="1218" y="269.5" opacity="100%">
+    <path d="M421.7 220.3L188.5 453.4L154.6 419.5L158.1 416H112C103.2 416 96 408.8 96 400V353.9L92.51 357.4C87.78 362.2 84.31 368 82.42 374.4L59.44 452.6L137.6 429.6C143.1 427.7 149.8 424.2 154.6 419.5L188.5 453.4C178.1 463.8 165.2 471.5 151.1 475.6L30.77 511C22.35 513.5 13.24 511.2 7.03 504.1C.8198 498.8-1.502 489.7 .976 481.2L36.37 360.9C40.53 346.8 48.16 333.9 58.57 323.5L291.7 90.34L421.7 220.3zM492.7 58.75C517.7 83.74 517.7 124.3 492.7 149.3L444.3 197.7L314.3 67.72L362.7 19.32C387.7-5.678 428.3-5.678 453.3 19.32L492.7 58.75z"></path>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="13" height="13" fill="#023f81" x="1218" y="357.5" opacity="100%">
+    <path d="M421.7 220.3L188.5 453.4L154.6 419.5L158.1 416H112C103.2 416 96 408.8 96 400V353.9L92.51 357.4C87.78 362.2 84.31 368 82.42 374.4L59.44 452.6L137.6 429.6C143.1 427.7 149.8 424.2 154.6 419.5L188.5 453.4C178.1 463.8 165.2 471.5 151.1 475.6L30.77 511C22.35 513.5 13.24 511.2 7.03 504.1C.8198 498.8-1.502 489.7 .976 481.2L36.37 360.9C40.53 346.8 48.16 333.9 58.57 323.5L291.7 90.34L421.7 220.3zM492.7 58.75C517.7 83.74 517.7 124.3 492.7 149.3L444.3 197.7L314.3 67.72L362.7 19.32C387.7-5.678 428.3-5.678 453.3 19.32L492.7 58.75z"></path>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="13" height="13" fill="#023f81" x="1218" y="429.5" opacity="100%">
+    <path d="M421.7 220.3L188.5 453.4L154.6 419.5L158.1 416H112C103.2 416 96 408.8 96 400V353.9L92.51 357.4C87.78 362.2 84.31 368 82.42 374.4L59.44 452.6L137.6 429.6C143.1 427.7 149.8 424.2 154.6 419.5L188.5 453.4C178.1 463.8 165.2 471.5 151.1 475.6L30.77 511C22.35 513.5 13.24 511.2 7.03 504.1C.8198 498.8-1.502 489.7 .976 481.2L36.37 360.9C40.53 346.8 48.16 333.9 58.57 323.5L291.7 90.34L421.7 220.3zM492.7 58.75C517.7 83.74 517.7 124.3 492.7 149.3L444.3 197.7L314.3 67.72L362.7 19.32C387.7-5.678 428.3-5.678 453.3 19.32L492.7 58.75z"></path>
+  </svg>
+  <g opacity="100%">
+    <text x="509" y="31.5" font-family="Open Sans" font-size="14" fill="#030303" letter-spacing="0" font-weight="normal" font-style="normal">All Entries</text>
+  </g>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12" fill="#9ca3af" x="110.5" y="216" opacity="100%">
+    <path d="M487.976 0H24.028C2.71 0-8.047 25.866 7.058 40.971L192 225.941V432c0 7.831 3.821 15.17 10.237 19.662l80 55.98C298.02 518.69 320 507.493 320 487.98V225.941l184.947-184.97C520.021 25.896 509.338 0 487.976 0z"></path>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12" fill="#9ca3af" x="180.5" y="216" opacity="100%">
+    <path d="M487.976 0H24.028C2.71 0-8.047 25.866 7.058 40.971L192 225.941V432c0 7.831 3.821 15.17 10.237 19.662l80 55.98C298.02 518.69 320 507.493 320 487.98V225.941l184.947-184.97C520.021 25.896 509.338 0 487.976 0z"></path>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12" fill="#9ca3af" x="314.5" y="216" opacity="100%">
+    <path d="M487.976 0H24.028C2.71 0-8.047 25.866 7.058 40.971L192 225.941V432c0 7.831 3.821 15.17 10.237 19.662l80 55.98C298.02 518.69 320 507.493 320 487.98V225.941l184.947-184.97C520.021 25.896 509.338 0 487.976 0z"></path>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12" fill="#9ca3af" x="425.5" y="216" opacity="100%">
+    <path d="M487.976 0H24.028C2.71 0-8.047 25.866 7.058 40.971L192 225.941V432c0 7.831 3.821 15.17 10.237 19.662l80 55.98C298.02 518.69 320 507.493 320 487.98V225.941l184.947-184.97C520.021 25.896 509.338 0 487.976 0z"></path>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12" fill="#9ca3af" x="543.5" y="216" opacity="100%">
+    <path d="M487.976 0H24.028C2.71 0-8.047 25.866 7.058 40.971L192 225.941V432c0 7.831 3.821 15.17 10.237 19.662l80 55.98C298.02 518.69 320 507.493 320 487.98V225.941l184.947-184.97C520.021 25.896 509.338 0 487.976 0z"></path>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12" fill="#9ca3af" x="725.5" y="216" opacity="100%">
+    <path d="M487.976 0H24.028C2.71 0-8.047 25.866 7.058 40.971L192 225.941V432c0 7.831 3.821 15.17 10.237 19.662l80 55.98C298.02 518.69 320 507.493 320 487.98V225.941l184.947-184.97C520.021 25.896 509.338 0 487.976 0z"></path>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12" fill="#9ca3af" x="833.5" y="216" opacity="100%">
+    <path d="M487.976 0H24.028C2.71 0-8.047 25.866 7.058 40.971L192 225.941V432c0 7.831 3.821 15.17 10.237 19.662l80 55.98C298.02 518.69 320 507.493 320 487.98V225.941l184.947-184.97C520.021 25.896 509.338 0 487.976 0z"></path>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12" fill="#9ca3af" x="919.5" y="216" opacity="100%">
+    <path d="M487.976 0H24.028C2.71 0-8.047 25.866 7.058 40.971L192 225.941V432c0 7.831 3.821 15.17 10.237 19.662l80 55.98C298.02 518.69 320 507.493 320 487.98V225.941l184.947-184.97C520.021 25.896 509.338 0 487.976 0z"></path>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12" fill="#9ca3af" x="998.5" y="216" opacity="100%">
+    <path d="M487.976 0H24.028C2.71 0-8.047 25.866 7.058 40.971L192 225.941V432c0 7.831 3.821 15.17 10.237 19.662l80 55.98C298.02 518.69 320 507.493 320 487.98V225.941l184.947-184.97C520.021 25.896 509.338 0 487.976 0z"></path>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12" fill="#9ca3af" x="1290.5" y="215" opacity="100%">
+    <path d="M487.976 0H24.028C2.71 0-8.047 25.866 7.058 40.971L192 225.941V432c0 7.831 3.821 15.17 10.237 19.662l80 55.98C298.02 518.69 320 507.493 320 487.98V225.941l184.947-184.97C520.021 25.896 509.338 0 487.976 0z"></path>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12" fill="#9ca3af" x="1396.5" y="216" opacity="100%">
+    <path d="M487.976 0H24.028C2.71 0-8.047 25.866 7.058 40.971L192 225.941V432c0 7.831 3.821 15.17 10.237 19.662l80 55.98C298.02 518.69 320 507.493 320 487.98V225.941l184.947-184.97C520.021 25.896 509.338 0 487.976 0z"></path>
+  </svg>
+  <g opacity="100%">
+    <text x="237" y="494.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">1587999</text>
+  </g>
+  <g opacity="100%">
+    <text x="63" y="498.5" font-family="Open Sans" font-size="14" fill="#111827" letter-spacing="0" font-weight="500" font-style="normal">5</text>
+  </g>
+  <g opacity="100%">
+    <text x="348" y="492.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">909001245987</text>
+  </g>
+  <g opacity="100%">
+    <text x="479" y="492.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">Frey Njordson</text>
+  </g>
+  <g opacity="100%">
+    <text x="628" y="483.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">2023-10-15 /</text>
+    <text x="628" y="503.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">2023-10-15</text>
+  </g>
+  <g opacity="100%">
+    <text x="737" y="490.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">Pending</text>
+  </g>
+  <g opacity="100%">
+    <text x="848" y="488.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">US$ 1.157,59</text>
+    <text x="848" y="508.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">/ US$ 114,54</text>
+  </g>
+  <g opacity="100%">
+    <text x="234" y="578.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">1544798</text>
+  </g>
+  <g opacity="100%">
+    <text x="63" y="582.5" font-family="Open Sans" font-size="14" fill="#111827" letter-spacing="0" font-weight="500" font-style="normal">12</text>
+  </g>
+  <g opacity="100%">
+    <text x="348" y="576.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">909001547999</text>
+  </g>
+  <g opacity="100%">
+    <text x="483" y="576.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">Heimdall Odinsson</text>
+  </g>
+  <g opacity="100%">
+    <text x="629" y="567.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">2023-09-11 /</text>
+    <text x="629" y="587.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">2023-09-11</text>
+  </g>
+  <g opacity="100%">
+    <text x="737" y="576.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">Pending</text>
+  </g>
+  <g opacity="100%">
+    <text x="848" y="574.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">US$ 479,59 /</text>
+    <text x="848" y="594.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">US$ 18,31</text>
+  </g>
+  <g opacity="100%">
+    <text x="63" y="658.5" font-family="Open Sans" font-size="14" fill="#111827" letter-spacing="0" font-weight="500" font-style="normal">20</text>
+  </g>
+  <rect></rect>
+  <g opacity="100%">
+    <text x="118" y="494.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">14478987</text>
+  </g>
+  <g opacity="100%">
+    <text x="117" y="580.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">14448793</text>
+  </g>
+  <g opacity="100%">
+    <text x="117" y="657.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">14556870</text>
+  </g>
+  <g opacity="100%">
+    <text x="237" y="658.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">1698752</text>
+  </g>
+  <g opacity="100%">
+    <text x="355" y="654.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">909001366000</text>
+  </g>
+  <g opacity="100%">
+    <text x="483" y="652.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">Tyr Odinsson</text>
+  </g>
+  <g opacity="100%">
+    <text x="628" y="644.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">2023-08-15 /</text>
+    <text x="628" y="664.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">2023-08-23</text>
+  </g>
+  <g opacity="100%">
+    <text x="737" y="651.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">Pending</text>
+  </g>
+  <g opacity="100%">
+    <text x="847" y="652.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">US$ 287,47 /</text>
+    <text x="847" y="672.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">US$ 13,53</text>
+  </g>
+  <g opacity="100%">
+    <text x="948" y="492.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">US$ 1.329,72</text>
+  </g>
+  <g opacity="100%">
+    <text x="948" y="578.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">US$ 497,90</text>
+  </g>
+  <g opacity="100%">
+    <text x="948" y="653.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">US$ 301,00</text>
+  </g>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="40" height="40" fill="#ff3b30" x="1076" y="469" opacity="100%">
+    <path d="M88 304H80V256H88C101.3 256 112 266.7 112 280C112 293.3 101.3 304 88 304zM192 256H200C208.8 256 216 263.2 216 272V336C216 344.8 208.8 352 200 352H192V256zM224 0V128C224 145.7 238.3 160 256 160H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64C0 28.65 28.65 0 64 0H224zM64 224C55.16 224 48 231.2 48 240V368C48 376.8 55.16 384 64 384C72.84 384 80 376.8 80 368V336H88C118.9 336 144 310.9 144 280C144 249.1 118.9 224 88 224H64zM160 368C160 376.8 167.2 384 176 384H200C226.5 384 248 362.5 248 336V272C248 245.5 226.5 224 200 224H176C167.2 224 160 231.2 160 240V368zM288 224C279.2 224 272 231.2 272 240V368C272 376.8 279.2 384 288 384C296.8 384 304 376.8 304 368V320H336C344.8 320 352 312.8 352 304C352 295.2 344.8 288 336 288H304V256H336C344.8 256 352 248.8 352 240C352 231.2 344.8 224 336 224H288zM256 0L384 128H256V0z"></path>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="40" height="40" fill="#ff3b30" x="1080" y="553" opacity="100%">
+    <path d="M88 304H80V256H88C101.3 256 112 266.7 112 280C112 293.3 101.3 304 88 304zM192 256H200C208.8 256 216 263.2 216 272V336C216 344.8 208.8 352 200 352H192V256zM224 0V128C224 145.7 238.3 160 256 160H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64C0 28.65 28.65 0 64 0H224zM64 224C55.16 224 48 231.2 48 240V368C48 376.8 55.16 384 64 384C72.84 384 80 376.8 80 368V336H88C118.9 336 144 310.9 144 280C144 249.1 118.9 224 88 224H64zM160 368C160 376.8 167.2 384 176 384H200C226.5 384 248 362.5 248 336V272C248 245.5 226.5 224 200 224H176C167.2 224 160 231.2 160 240V368zM288 224C279.2 224 272 231.2 272 240V368C272 376.8 279.2 384 288 384C296.8 384 304 376.8 304 368V320H336C344.8 320 352 312.8 352 304C352 295.2 344.8 288 336 288H304V256H336C344.8 256 352 248.8 352 240C352 231.2 344.8 224 336 224H288zM256 0L384 128H256V0z"></path>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="40" height="40" fill="#ff3b30" x="1080" y="631" opacity="100%">
+    <path d="M88 304H80V256H88C101.3 256 112 266.7 112 280C112 293.3 101.3 304 88 304zM192 256H200C208.8 256 216 263.2 216 272V336C216 344.8 208.8 352 200 352H192V256zM224 0V128C224 145.7 238.3 160 256 160H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64C0 28.65 28.65 0 64 0H224zM64 224C55.16 224 48 231.2 48 240V368C48 376.8 55.16 384 64 384C72.84 384 80 376.8 80 368V336H88C118.9 336 144 310.9 144 280C144 249.1 118.9 224 88 224H64zM160 368C160 376.8 167.2 384 176 384H200C226.5 384 248 362.5 248 336V272C248 245.5 226.5 224 200 224H176C167.2 224 160 231.2 160 240V368zM288 224C279.2 224 272 231.2 272 240V368C272 376.8 279.2 384 288 384C296.8 384 304 376.8 304 368V320H336C344.8 320 352 312.8 352 304C352 295.2 344.8 288 336 288H304V256H336C344.8 256 352 248.8 352 240C352 231.2 344.8 224 336 224H288zM256 0L384 128H256V0z"></path>
+  </svg>
+  <g opacity="100%">
+    <rect filter="url(#filter_dshadow_10_0_0_0000001a)" x="1167.5" y="473.5" width="119" height="35" fill="#fff" rx="8" stroke="#505050" stroke-width="1"></rect>
+    <text x="1175.5" y="495.5" font-family="Roboto" font-size="14" fill="#000" letter-spacing="0" font-weight="normal" font-style="normal" mask="url(#mask_v1ixaqvy9h)">
+      <tspan>Select coverage</tspan>
+    </text>
+    <g mask="url(#mask_v1ixaqvy9h)">
+      <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 24 24" fill="#000" x="1274.5" y="484">
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+      </svg>
+    </g>
+    <defs>
+      <mask id="mask_v1ixaqvy9h">
+        <rect x="1167.5" y="473.5" width="119" height="35" fill="white"></rect>
+      </mask>
+    </defs>
+  </g>
+  <g opacity="100%">
+    <rect filter="url(#filter_dshadow_10_0_0_0000001a)" x="1167.5" y="635.5" width="119" height="35" fill="#fff" rx="8" stroke="#505050" stroke-width="1"></rect>
+    <text x="1175.5" y="657.5" font-family="Roboto" font-size="14" fill="#000" letter-spacing="0" font-weight="normal" font-style="normal" mask="url(#mask_vpoz35gs3s)">
+      <tspan>Select coverage</tspan>
+    </text>
+    <g mask="url(#mask_vpoz35gs3s)">
+      <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 24 24" fill="#000" x="1274.5" y="646">
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+      </svg>
+    </g>
+    <defs>
+      <mask id="mask_vpoz35gs3s">
+        <rect x="1167.5" y="635.5" width="119" height="35" fill="white"></rect>
+      </mask>
+    </defs>
+  </g>
+  <g opacity="100%">
+    <rect filter="url(#filter_dshadow_10_0_0_0000001a)" x="1168.5" y="558.5" width="119" height="35" fill="#fff" rx="8" stroke="#505050" stroke-width="1"></rect>
+    <text x="1176.5" y="580.5" font-family="Roboto" font-size="14" fill="#000" letter-spacing="0" font-weight="normal" font-style="normal" mask="url(#mask_9nrgtcerfr)">
+      <tspan>Select coverage</tspan>
+    </text>
+    <g mask="url(#mask_9nrgtcerfr)">
+      <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 24 24" fill="#000" x="1275.5" y="569">
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+      </svg>
+    </g>
+    <defs>
+      <mask id="mask_9nrgtcerfr">
+        <rect x="1168.5" y="558.5" width="119" height="35" fill="white"></rect>
+      </mask>
+    </defs>
+  </g>
+  <g opacity="100%" mask="url(#mask_jwag0ngm4e)">
+    <text x="737" y="338.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">Settled</text>
+    <text x="737" y="358.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">2023-09-</text>
+    <text x="737" y="378.5" font-family="Open Sans" font-size="14" fill="#6b7280" letter-spacing="0" font-weight="normal" font-style="normal">13</text>
+    <defs>
+      <mask id="mask_jwag0ngm4e">
+        <rect x="737" y="323" width="74" height="50" fill="white"></rect>
+      </mask>
+    </defs>
+  </g>
+  <defs>
+    <filter id="filter_dshadow_6_0_4_0000001a" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="bg-fix"></feFlood>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="alpha"></feColorMatrix>
+      <feOffset dx="0" dy="4"></feOffset>
+      <feGaussianBlur stdDeviation="3"></feGaussianBlur>
+      <feComposite in2="alpha" operator="out"></feComposite>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"></feColorMatrix>
+      <feBlend mode="normal" in2="bg-fix" result="bg-fix-filter_dshadow_6_0_4_0000001a"></feBlend>
+      <feBlend in="SourceGraphic" in2="bg-fix-filter_dshadow_6_0_4_0000001a" result="shape"></feBlend>
+    </filter>
+    <filter id="filter_dshadow_0_0_0_00000014" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="bg-fix"></feFlood>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="alpha"></feColorMatrix>
+      <feOffset dx="0" dy="0"></feOffset>
+      <feGaussianBlur stdDeviation="0"></feGaussianBlur>
+      <feComposite in2="alpha" operator="out"></feComposite>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"></feColorMatrix>
+      <feBlend mode="normal" in2="bg-fix" result="bg-fix-filter_dshadow_0_0_0_00000014"></feBlend>
+      <feBlend in="SourceGraphic" in2="bg-fix-filter_dshadow_0_0_0_00000014" result="shape"></feBlend>
+    </filter>
+    <filter id="filter_dshadow_10_0_2_0000001a" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="bg-fix"></feFlood>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="alpha"></feColorMatrix>
+      <feOffset dx="0" dy="2"></feOffset>
+      <feGaussianBlur stdDeviation="5"></feGaussianBlur>
+      <feComposite in2="alpha" operator="out"></feComposite>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"></feColorMatrix>
+      <feBlend mode="normal" in2="bg-fix" result="bg-fix-filter_dshadow_10_0_2_0000001a"></feBlend>
+      <feBlend in="SourceGraphic" in2="bg-fix-filter_dshadow_10_0_2_0000001a" result="shape"></feBlend>
+    </filter>
+    <filter id="filter_dshadow_10_0_0_0000001a" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="bg-fix"></feFlood>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="alpha"></feColorMatrix>
+      <feOffset dx="0" dy="0"></feOffset>
+      <feGaussianBlur stdDeviation="5"></feGaussianBlur>
+      <feComposite in2="alpha" operator="out"></feComposite>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"></feColorMatrix>
+      <feBlend mode="normal" in2="bg-fix" result="bg-fix-filter_dshadow_10_0_0_0000001a"></feBlend>
+      <feBlend in="SourceGraphic" in2="bg-fix-filter_dshadow_10_0_0_0000001a" result="shape"></feBlend>
+    </filter>
+    <style id="google">@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap);
+</style>
+    <style id="brand"></style>
+  </defs>
+</svg>
