@@ -35,7 +35,7 @@ body {
 
 /* ===== UTILITY CLASSES ===== */
 .container {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -1266,13 +1266,13 @@ img {
     background: white;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    overflow-x: auto;
+    overflow-x: visible;
     margin-bottom: 32px;
 }
 
 .data-table {
     width: 100%;
-    min-width: 1400px;
+    min-width: 100%;
     border-collapse: collapse;
     font-family: 'Open Sans', sans-serif;
 }
@@ -1296,6 +1296,7 @@ img {
 /* Center specific headers so their column contents align visually */
 .data-table th.col-payable,
 .data-table th.col-claim { text-align: center; }
+.data-table th.col-notes { text-align: center; }
 
 .data-table td {
     padding: 14px 12px;
@@ -1386,6 +1387,30 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Center notes column */
+.notes { text-align: center; }
+
+.edit-cell {
+    width: 70px;
+    text-align: center;
+}
+
+.btn-edit-coverage {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 6px 10px;
+    cursor: pointer;
+    color: #374151;
+    transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.2s ease;
+}
+
+.btn-edit-coverage:hover {
+    background: #f3f4f6;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
 }
 
 /* New Table Elements */
