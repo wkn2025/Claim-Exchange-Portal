@@ -105,7 +105,7 @@ document.querySelector('.contact-form').addEventListener('submit', function(e) {
 
 // Email validation
 function isValidEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailRegex = /^[^/s@]+@[^/s@]+/.[^/s@]+$/;
     return emailRegex.test(email);
 }
 

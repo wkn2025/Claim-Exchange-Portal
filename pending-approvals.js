@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Persist a stable denied amount sum on the row, so it survives the modal hop
         let deniedSum = 0;
         selectedLines.forEach(label => {
-            const parsed = parseMoney(String(label).match(/(?:US?\$)?\s?[0-9][0-9\.,]*$/)?.[0] || '0');
+            const parsed = parseMoney(String(label).match(/(?:US?/$)?/s?[0-9][0-9/.,]*$/)?.[0] || '0');
             console.debug('[PR DEBUG] confirmSelection: label ->', label, 'parsed ->', parsed);
             deniedSum += parsed;
         });
@@ -293,9 +293,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function parseMoney(text) {
         // Normalize currency text like "US$ 1.329,72" or "$1,329.72"
-        let normalized = String(text).replace(/[^0-9,\.]/g, '');
+        let normalized = String(text).replace(/[^0-9,/.]/g, '');
         if (normalized.includes(',') && normalized.includes('.')) {
-            normalized = normalized.replace(/\./g, '').replace(',', '.');
+            normalized = normalized.replace(//./g, '').replace(',', '.');
         } else if (normalized.includes(',')) {
             normalized = normalized.replace(',', '.');
         }
@@ -351,7 +351,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Fallback: derive from current row if breakdown not visible
         if (!(allowed > 0 || savings > 0)) {
             const payableText = row.querySelector('.payable-amount').textContent;
-            const parts = payableText.match(/([0-9][0-9\.,]+)/g) || [];
+            const parts = payableText.match(/([0-9][0-9/.,]+)/g) || [];
             allowed = parts[0] ? parseMoney(parts[0]) : 0;
             const fees = parts[1] ? parseMoney(parts[1]) : 0;
             savings = fees > 0 ? (fees / 0.165) : 0;
@@ -373,7 +373,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.debug('[PR DEBUG] summary: using persisted deniedFromSelected =', deniedFromSelected);
             } else if (Array.isArray(selectedLines) && selectedLines.length) {
                 deniedFromSelected = selectedLines.reduce((sum, label) => {
-                    const lastToken = String(label).match(/(?:US?\$)?\s?[0-9][0-9\.,]*$/)?.[0] || '0';
+                    const lastToken = String(label).match(/(?:US?/$)?/s?[0-9][0-9/.,]*$/)?.[0] || '0';
                     const val = parseMoney(lastToken);
                     console.debug('[PR DEBUG] summary: fallback parse label ->', label, 'val ->', val);
                     return sum + val;
@@ -403,7 +403,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const deniedCpts = new Set();
                 if (Array.isArray(selectedLines) && selectedLines.length) {
                     selectedLines.forEach(lbl => {
-                        const match = String(lbl).match(/^\s*(\d+)/);
+                        const match = String(lbl).match(/^/s*(/d+)/);
                         if (match) deniedCpts.add(match[1]);
                     });
                 }
@@ -799,7 +799,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const isHidden = detailsRow.hasAttribute('hidden');
             const symbol = isHidden ? '+' : '–';
             payableCell.innerHTML = `${allowedStr}<br/>/ ${feesStr}
-                <div class=\"payable-actions\"><button class=\"btn-expand\" aria-label=\"Show cost breakdown\" data-breakdown=\"${id}\">${symbol}</button></div>`;
+                <div class=/"payable-actions/"><button class=/"btn-expand/" aria-label=/"Show cost breakdown/" data-breakdown=/"${id}/">${symbol}</button></div>`;
             // rebind toggle for the newly injected button
             const newBtn = payableCell.querySelector('.btn-expand');
             newBtn.addEventListener('click', function() {
