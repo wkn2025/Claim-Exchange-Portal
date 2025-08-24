@@ -257,7 +257,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+<<<<<<< HEAD
 console.log('🚀 Website loaded successfully! All interactive features are ready.');
+=======
 // ===== WELCOME SCREEN ACTION BUTTONS =====
 document.addEventListener('DOMContentLoaded', function() {
     const actionButtons = document.querySelectorAll('.action-btn');
@@ -420,3 +422,4 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 console.log('🚀 Invoice Management Portal loaded successfully! All features are ready.');
+>>>>>>> 6d67cf0decea27a0299bf4073d092ac48a6703b5
