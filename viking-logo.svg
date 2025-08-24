@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <!-- Viking Logo Placeholder -->
+  <rect width="200" height="60" fill="#ef4444" rx="8"/>
+  <text x="100" y="38" font-family="Roboto Condensed, sans-serif" font-size="24" font-weight="700" fill="white" text-anchor="middle" letter-spacing="2px">VIKING</text>
+  <!-- Viking helmet icon -->
+  <circle cx="30" cy="30" r="12" fill="white"/>
+  <path d="M24 24 L36 24 L36 30 L30 36 L24 30 Z" fill="#ef4444"/>
+  <circle cx="27" cy="27" r="1.5" fill="#ef4444"/>
+  <circle cx="33" cy="27" r="1.5" fill="#ef4444"/>
+  <!-- Horns -->
+  <path d="M18 20 Q22 16 26 20" stroke="white" stroke-width="2" fill="none"/>
+  <path d="M34 20 Q38 16 42 20" stroke="white" stroke-width="2" fill="none"/>
+</svg>

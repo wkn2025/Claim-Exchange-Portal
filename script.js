@@ -257,4 +257,169 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+<<<<<<< HEAD
 console.log('🚀 Website loaded successfully! All interactive features are ready.');
+=======
+// ===== WELCOME SCREEN ACTION BUTTONS =====
+document.addEventListener('DOMContentLoaded', function() {
+    const actionButtons = document.querySelectorAll('.action-btn');
+    
+    actionButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const buttonText = this.textContent;
+            
+            // Add visual feedback with ripple effect
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = '';
+            }, 150);
+            
+            // Show notification based on button type
+            let message = '';
+            switch(buttonText) {
+                case 'Pending Approvals':
+                    message = 'Loading pending approvals...';
+                    break;
+                case 'My Approvals':
+                    message = 'Opening your approvals...';
+                    break;
+                case 'Medical Records Tracker':
+                    message = 'Accessing medical records...';
+                    break;
+                case 'All Entries':
+                    message = 'Loading all entries...';
+                    break;
+                default:
+                    message = `Opening ${buttonText}...`;
+            }
+            
+            showNotification(message, 'info');
+            
+            // Here you can add specific functionality for each button
+            console.log(`${buttonText} button clicked`);
+            
+            // Example: You could redirect to different pages or show different content
+            // window.location.href = '/pending-approvals';
+        });
+    });
+    
+    // Add keyboard support for action buttons
+    actionButtons.forEach(button => {
+        button.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                this.click();
+            }
+        });
+    });
+});
+
+// ===== THEME SWITCHER =====
+document.addEventListener('DOMContentLoaded', function() {
+    const themeToggle = document.getElementById('theme-toggle');
+    const themes = [
+        { name: 'green', primary: '#c6c922', hover: '#b5b520', emoji: '🟢' },
+        { name: 'blue', primary: '#3b82f6', hover: '#2563eb', emoji: '🔵' },
+        { name: 'purple', primary: '#8b5cf6', hover: '#7c3aed', emoji: '🟣' },
+        { name: 'red', primary: '#ef4444', hover: '#dc2626', emoji: '🔴' },
+        { name: 'orange', primary: '#f97316', hover: '#ea580c', emoji: '🟠' }
+    ];
+    
+    let currentThemeIndex = 0;
+    
+    themeToggle.addEventListener('click', function() {
+        currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+        const newTheme = themes[currentThemeIndex];
+        
+        // Update CSS custom properties
+        document.documentElement.style.setProperty('--primary-green', newTheme.primary);
+        document.documentElement.style.setProperty('--primary-green-hover', newTheme.hover);
+        
+        // Update button emoji
+        this.textContent = newTheme.emoji;
+        
+        // Show notification
+        showNotification(`Theme changed to ${newTheme.name}!`, 'success');
+        
+        // Add visual feedback
+        this.style.transform = 'scale(0.8)';
+        setTimeout(() => {
+            this.style.transform = '';
+        }, 150);
+    });
+});
+
+// ===== LOGIN INTERFACE =====
+document.addEventListener('DOMContentLoaded', function() {
+    const loginBtn = document.getElementById('login-btn');
+    const usernameInput = document.getElementById('username');
+    const passwordInput = document.getElementById('password');
+    
+    loginBtn.addEventListener('click', function() {
+        const username = usernameInput.value.trim();
+        const password = passwordInput.value.trim();
+        
+        if (!username || !password) {
+            showNotification('Please enter both username and password.', 'error');
+            return;
+        }
+        
+        // Simulate login process
+        this.textContent = 'Logging in...';
+        this.disabled = true;
+        
+        setTimeout(() => {
+            // Simulate successful login
+            showNotification(`Welcome back, ${username}!`, 'success');
+            this.textContent = 'Login';
+            this.disabled = false;
+            
+            // Clear inputs after successful login
+            usernameInput.value = '';
+            passwordInput.value = '';
+            
+            console.log(`Login attempt for user: ${username}`);
+        }, 1500);
+    });
+    
+    // Allow Enter key to submit login
+    [usernameInput, passwordInput].forEach(input => {
+        input.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                loginBtn.click();
+            }
+        });
+    });
+});
+
+// ===== USER PROFILE INTERFACE =====
+document.addEventListener('DOMContentLoaded', function() {
+    const logoutBtn = document.querySelector('.logout-btn');
+    
+    logoutBtn.addEventListener('click', function() {
+        // Add visual feedback
+        this.style.transform = 'scale(0.9)';
+        setTimeout(() => {
+            this.style.transform = '';
+        }, 150);
+        
+        showNotification('Logging out...', 'info');
+        
+        // Simulate logout process
+        setTimeout(() => {
+            showNotification('Successfully logged out!', 'success');
+            console.log('User logged out');
+        }, 1000);
+    });
+    
+    // Add hover effect to user profile
+    const userProfile = document.querySelector('.user-profile');
+    userProfile.addEventListener('click', function() {
+        showNotification('Profile menu coming soon...', 'info');
+    });
+});
+
+console.log('🚀 Invoice Management Portal loaded successfully! All features are ready.');
+>>>>>>> 6d67cf0decea27a0299bf4073d092ac48a6703b5
