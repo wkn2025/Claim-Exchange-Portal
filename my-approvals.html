@@ -9,9 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="page-my-approvals">
     <header class="navbar">
-    <nav class="nav-container">
+        <nav class="nav-container">
             <div class="nav-logo">
                 <img src="eurocenter.png" alt="Euro Center Logo" class="logo-image">
                 <button class="app-menu-trigger" aria-haspopup="true" aria-expanded="false">
@@ -22,7 +22,7 @@
                     <a href="index.html" role="menuitem"><i class="fas fa-home"></i> Home</a>
                     <a href="pending-approvals.html" role="menuitem"><i class="fas fa-list-check"></i> Pending Approvals</a>
                     <a href="my-approvals.html" role="menuitem"><i class="fas fa-user-check"></i> My Approvals</a>
-                    <a href="medical-records-tracker.html" role="menuitem"><i class="fas fa-file-medical"></i> Medical Records Tracker</a>
+                    <a href="medical-records.html" role="menuitem"><i class="fas fa-file-medical"></i> Medical Records Tracker</a>
                     <a href="all-entries.html" role="menuitem"><i class="fas fa-database"></i> All Entries</a>
                 </div>
             </div>
@@ -82,7 +82,6 @@
                             <th class="col-total">TOTAL</th>
                             <th class="col-notes">NOTES</th>
                             <th class="col-claim">CLAIM</th>
-                            <th class="col-edit">EDIT COVERAGE</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -95,7 +94,6 @@
                             <td class="total-amount">US$ 412.42</td>
                             <td class="notes">Approved with standard fees</td>
                             <td class="claim-image"><i class="fas fa-file-pdf" style="color:#ff3b30;font-size:20px;"></i></td>
-                            <td class="edit-cell"><button class="btn-edit-coverage" title="Edit coverage"><i class="fas fa-pen"></i></button></td>
                         </tr>
                         <tr class="table-row">
                             <td class="treatment-date">2023-09-11</td>
@@ -106,18 +104,6 @@
                             <td class="total-amount">US$ 226.29</td>
                             <td class="notes">US$ 112.00 patient responsibility</td>
                             <td class="claim-image"><i class="fas fa-file-pdf" style="color:#ff3b30;font-size:20px;"></i></td>
-                            <td class="edit-cell"><button class="btn-edit-coverage" title="Edit coverage"><i class="fas fa-pen"></i></button></td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="treatment-date">2023-08-23</td>
-                            <td class="uhap-id">14556870</td>
-                            <td class="case-number">1698752</td>
-                            <td class="patient-name">Tyr Odinsson</td>
-                            <td class="status"><span class="status-badge high">Not Covered</span></td>
-                            <td class="total-amount">US$ 285.00</td>
-                            <td class="notes">Pre-existing condition</td>
-                            <td class="claim-image"><i class="fas fa-file-pdf" style="color:#ff3b30;font-size:20px;"></i></td>
-                            <td class="edit-cell"><button class="btn-edit-coverage" title="Edit coverage"><i class="fas fa-pen"></i></button></td>
                         </tr>
                     </tbody>
                 </table>
@@ -133,95 +119,6 @@
         </div>
     </footer>
 
-    <!-- Partial Coverage Modal (same structure as Pending Approvals) -->
-    <div id="partial-coverage-modal" class="modal-overlay">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Partial Coverage - Select Denied Lines</h3>
-                <button class="modal-close">&times;</button>
-            </div>
-            <div class="modal-body">
-                <p>Select which payment lines should be denied:</p>
-                <div class="payment-lines">
-                    <div class="payment-line">
-                        <input type="checkbox" id="ma-line1" class="line-checkbox">
-                        <label for="ma-line1">Line 1: Office visit - US$ 133.78</label>
-                    </div>
-                    <div class="payment-line">
-                        <input type="checkbox" id="ma-line2" class="line-checkbox">
-                        <label for="ma-line2">Line 2: Bloodwork - US$ 66.89</label>
-                    </div>
-                    <div class="payment-line">
-                        <input type="checkbox" id="ma-line3" class="line-checkbox">
-                        <label for="ma-line3">Line 3: Ecography - US$ 100.33</label>
-                    </div>
-                </div>
-                <button id="ma-confirm-partial" class="btn-confirm">Confirm Selection</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Denial Reason Modal -->
-    <div id="ma-denial-reason-modal" class="modal-overlay">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Select Denial Reason</h3>
-                <button class="modal-close">&times;</button>
-            </div>
-            <div class="modal-body">
-                <p>Choose the reason for denial:</p>
-                <div class="denial-reasons">
-                    <div class="denial-option">
-                        <input type="radio" id="ma-not-covered" name="ma-denial-reason" value="not_covered">
-                        <label for="ma-not-covered">Not a covered service</label>
-                    </div>
-                    <div class="denial-option">
-                        <input type="radio" id="ma-exceed-benefit" name="ma-denial-reason" value="exceed_benefit">
-                        <label for="ma-exceed-benefit">Exceed maximum benefit</label>
-                    </div>
-                    <div class="denial-option">
-                        <input type="radio" id="ma-pre-existing" name="ma-denial-reason" value="pre_existing">
-                        <label for="ma-pre-existing">Pre-existing</label>
-                    </div>
-                </div>
-                <button id="ma-confirm-denial" class="btn-confirm">Confirm Reason</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Edit Coverage Modal (reusing styles from Pending Approvals) -->
-    <div id="coverage-summary-modal" class="modal-overlay" aria-hidden="true">
-        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="edit-coverage-title">
-            <div class="modal-header">
-                <h3 id="edit-coverage-title">Edit Coverage Decision</h3>
-                <button class="modal-close" data-close="coverage">&times;</button>
-            </div>
-            <div class="modal-body">
-                <div style="margin-bottom:12px; display:flex; gap:10px; align-items:center;">
-                    <label for="edit-coverage-select" style="font-weight:600; color:#111827;">Decision</label>
-                    <select id="edit-coverage-select" class="reduction-select" style="width: 200px;">
-                        <option value="full">Covered</option>
-                        <option value="partial">Partially Denied</option>
-                        <option value="none">Not Covered</option>
-                    </select>
-                </div>
-                <div id="coverage-summary-content" class="summary-lines"></div>
-                <div id="summary-reduction-inline" class="reduction-inline" style="margin-top:14px; display:none;">
-                    <select id="summary-reduction-type" class="reduction-select" style="width:160px;">
-                        <option value="">Add reduction</option>
-                        <option value="copay">Co-pay</option>
-                        <option value="deductible">Deductible</option>
-                        <option value="maximum">Maximum reached</option>
-                    </select>
-                    <input id="summary-reduction-amount" type="number" min="0" step="0.01" placeholder="US$ amount" style="padding:8px 12px;border:1px solid #e5e7eb;border-radius:8px;font-size:12px;width:140px;">
-                </div>
-                <button id="confirm-coverage-summary" class="btn-confirm" style="margin-top:14px;">Confirm Decision</button>
-            </div>
-        </div>
-    </div>
-
     <script src="script.js"></script>
-    <script src="my-approvals.js"></script>
 </body>
 </html>
-

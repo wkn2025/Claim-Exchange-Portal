@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Entries - Euro Center Invoice Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <nav class="nav-container">
+            <div class="nav-logo">
+                <img src="eurocenter.png" alt="Euro Center Logo" class="logo-image">
+                <button class="app-menu-trigger" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                    <span>Menu</span>
+                </button>
+                <div class="nav-dropdown" role="menu" aria-label="Main menu">
+                    <a href="index.html" role="menuitem"><i class="fas fa-home"></i> Home</a>
+                    <a href="pending-approvals.html" role="menuitem"><i class="fas fa-list-check"></i> Pending Approvals</a>
+                    <a href="my-approvals.html" role="menuitem"><i class="fas fa-user-check"></i> My Approvals</a>
+                    <a href="medical-records.html" role="menuitem"><i class="fas fa-file-medical"></i> Medical Records Tracker</a>
+                    <a href="all-entries.html" role="menuitem"><i class="fas fa-database"></i> All Entries</a>
+                </div>
+            </div>
+
+            <div class="portal-title">
+                <h3>Invoice Management Portal</h3>
+            </div>
+
+            <div class="user-section">
+                <div class="user-profile">
+                    <div class="profile-avatar"><i class="fas fa-user-shield"></i></div>
+                    <div class="user-info">
+                        <span class="user-name">WKN</span>
+                        <span class="user-status">Online</span>
+                    </div>
+                    <button class="logout-btn" title="Logout"><i class="fas fa-sign-out-alt"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <nav class="breadcrumb-nav">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html" class="breadcrumb-link"><i class="fas fa-home"></i> Home</a>
+                <span class="breadcrumb-separator">></span>
+                <span class="breadcrumb-current">All Entries</span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">All Entries</h1>
+                <p class="page-description">Browse all imported claims and their statuses</p>
+            </div>
+
+            <div class="data-table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th class="col-days">DAYS SINCE<br/>IMPORT</th>
+                            <th class="col-uhap">UHAP ID</th>
+                            <th class="col-case">CASE NUMBER</th>
+                            <th class="col-client">CLIENT ID</th>
+                            <th class="col-patient">PATIENT</th>
+                            <th class="col-treatment">TREATMENT DATE</th>
+                            <th class="col-status">STATUS GLOBO</th>
+                            <th class="col-payable">PAYABLE<br/>AMOUNT /<br/>FEES</th>
+                            <th class="col-total">TOTAL</th>
+                            <th class="col-claim">CLAIM IMAGE</th>
+                            <th class="col-coverage">COVERAGE DECISION</th>
+                            <th class="col-update">LAST UPDATE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-row">
+                            <td class="days-count">5</td>
+                            <td class="uhap-id">12345670</td>
+                            <td class="case-number">1687985</td>
+                            <td class="client-id">909001245873</td>
+                            <td class="patient-name">Thor Odinsson</td>
+                            <td class="treatment-date"><div class="payable-stack"><div class="payable-allowed">2023-09-15</div><div class="payable-divider"></div><div class="payable-fees">2023-09-15</div></div></td>
+                            <td class="status2">Settled</td>
+                            <td class="payable-amount"><div class="payable-stack"><div class="payable-allowed">US$ 157,59</div><div class="payable-divider"></div><div class="payable-fees">US$ 14,54</div></div></td>
+                            <td class="total-amount">US$ 172,13</td>
+                            <td class="claim-image"><i class="fas fa-file-pdf" style="color:#ff3b30;font-size:20px;"></i></td>
+                            <td class="coverage-decision">Covered</td>
+                            <td class="last-update">THO / 2025-08-13 16:34</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="days-count">12</td>
+                            <td class="uhap-id">14368790</td>
+                            <td class="case-number">1688798</td>
+                            <td class="client-id">909001547897</td>
+                            <td class="patient-name">Odin Borrson</td>
+                            <td class="treatment-date"><div class="payable-stack"><div class="payable-allowed">2023-09-10</div><div class="payable-divider"></div><div class="payable-fees">2023-09-10</div></div></td>
+                            <td class="status2">Settled</td>
+                            <td class="payable-amount"><div class="payable-stack"><div class="payable-allowed">US$ 1,479,59</div><div class="payable-divider"></div><div class="payable-fees">US$ 8,31</div></div></td>
+                            <td class="total-amount">US$ 1,487,90</td>
+                            <td class="claim-image"><i class="fas fa-file-pdf" style="color:#ff3b30;font-size:20px;"></i></td>
+                            <td class="coverage-decision">Denied</td>
+                            <td class="last-update">THO / 2025-08-10 16:20</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="days-count">20</td>
+                            <td class="uhap-id">14356987</td>
+                            <td class="case-number">1654587</td>
+                            <td class="client-id">909001365780</td>
+                            <td class="patient-name">Loki Laufeyjarson</td>
+                            <td class="treatment-date"><div class="payable-stack"><div class="payable-allowed">2023-08-25</div><div class="payable-divider"></div><div class="payable-fees">2023-08-29</div></div></td>
+                            <td class="status2">Pay</td>
+                            <td class="payable-amount"><div class="payable-stack"><div class="payable-allowed">US$ 987,47</div><div class="payable-divider"></div><div class="payable-fees">US$ 23,53</div></div></td>
+                            <td class="total-amount">US$ 1,011,00</td>
+                            <td class="claim-image"><i class="fas fa-file-pdf" style="color:#ff3b30;font-size:20px;"></i></td>
+                            <td class="coverage-decision">Partially denied</td>
+                            <td class="last-update">THO / 2025-08-10 16:59</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="days-count">5</td>
+                            <td class="uhap-id">14478987</td>
+                            <td class="case-number">1587999</td>
+                            <td class="client-id">909001245987</td>
+                            <td class="patient-name">Frey Njordson</td>
+                            <td class="treatment-date"><div class="payable-stack"><div class="payable-allowed">2023-10-15</div><div class="payable-divider"></div><div class="payable-fees">2023-10-15</div></div></td>
+                            <td class="status"><span class="status-badge pending">Pending</span></td>
+                            <td class="payable-amount"><div class="payable-stack"><div class="payable-allowed">US$ 1,157,59</div><div class="payable-divider"></div><div class="payable-fees">US$ 114,54</div></div></td>
+                            <td class="total-amount">US$ 1,329,72</td>
+                            <td class="claim-image"><i class="fas fa-file-pdf" style="color:#ff3b30;font-size:20px;"></i></td>
+                            <td class="coverage-decision">
+                                <div class="coverage-inline">
+                                    <select class="coverage-select">
+                                        <option value="">Select coverage</option>
+                                        <option value="full">Covered</option>
+                                        <option value="partial">Partially Denied</option>
+                                        <option value="none">Not Covered</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td class="last-update"></td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="days-count">12</td>
+                            <td class="uhap-id">14448793</td>
+                            <td class="case-number">1544798</td>
+                            <td class="client-id">909001547999</td>
+                            <td class="patient-name">Heimdall Odinsson</td>
+                            <td class="treatment-date"><div class="payable-stack"><div class="payable-allowed">2023-09-11</div><div class="payable-divider"></div><div class="payable-fees">2023-09-11</div></div></td>
+                            <td class="status"><span class="status-badge pending">Pending</span></td>
+                            <td class="payable-amount"><div class="payable-stack"><div class="payable-allowed">US$ 479,59</div><div class="payable-divider"></div><div class="payable-fees">US$ 18,31</div></div></td>
+                            <td class="total-amount">US$ 497,90</td>
+                            <td class="claim-image"><i class="fas fa-file-pdf" style="color:#ff3b30;font-size:20px;"></i></td>
+                            <td class="coverage-decision">
+                                <div class="coverage-inline">
+                                    <select class="coverage-select">
+                                        <option value="">Select coverage</option>
+                                        <option value="full">Covered</option>
+                                        <option value="partial">Partially Denied</option>
+                                        <option value="none">Not Covered</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td class="last-update"></td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="days-count">20</td>
+                            <td class="uhap-id">14556870</td>
+                            <td class="case-number">1698752</td>
+                            <td class="client-id">909001366000</td>
+                            <td class="patient-name">Tyr Odinsson</td>
+                            <td class="treatment-date"><div class="payable-stack"><div class="payable-allowed">2023-08-15</div><div class="payable-divider"></div><div class="payable-fees">2023-08-23</div></div></td>
+                            <td class="status"><span class="status-badge pending">Pending</span></td>
+                            <td class="payable-amount"><div class="payable-stack"><div class="payable-allowed">US$ 287,47</div><div class="payable-divider"></div><div class="payable-fees">US$ 13,53</div></div></td>
+                            <td class="total-amount">US$ 301,00</td>
+                            <td class="claim-image"><i class="fas fa-file-pdf" style="color:#ff3b30;font-size:20px;"></i></td>
+                            <td class="coverage-decision">
+                                <div class="coverage-inline">
+                                    <select class="coverage-select">
+                                        <option value="">Select coverage</option>
+                                        <option value="full">Covered</option>
+                                        <option value="partial">Partially Denied</option>
+                                        <option value="none">Not Covered</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td class="last-update"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="entries-footer">
+                <span style="color:#6b7280; font-family:'Open Sans',sans-serif; font-size:14px;">Entries per page:</span>
+                <a href="#" class="entries-link">10</a>
+                <a href="#" class="entries-link entries-active">20</a>
+                <a href="#" class="entries-link">50</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Euro Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

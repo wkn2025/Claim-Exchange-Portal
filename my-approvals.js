@@ -45,6 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const maConfirmPartial = document.getElementById('ma-confirm-partial');
     const maConfirmDenial = document.getElementById('ma-confirm-denial');
 
+    let deniedFromSelected = 0;
+
     function openModal() {
         if (!coverageModal) return;
         coverageModal.classList.add('active');
@@ -63,32 +65,66 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function formatUSD(num){ return `US$ ${Number(num).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}`; }
     function truncate2(n){ const x=Number(n); return Math.floor(x*100)/100; }
+    function parseMoney(text){ let normalized=String(text).replace(/[^0-9,\.]/g,''); if(normalized.includes(',')&&normalized.includes('.')){normalized=normalized.replace(/\./g,'').replace(',', '.');} else if(normalized.includes(',')){normalized=normalized.replace(',', '.');} return parseFloat(normalized)||0; }
+    function parseLastMoneyToken(label){
+        const tokens = String(label).match(/(?:US?\$)?\s?[0-9][0-9\.,]*/g);
+        if (!tokens || tokens.length === 0) return 0;
+        return parseMoney(tokens[tokens.length - 1]);
+    }
 
     let currentRow = null;
     function renderSummary(){
         if (!summaryContent) return;
         // For this minimal integration, derive basic values from the row
         const totalCell = currentRow?.querySelector('.total-amount');
-        const totalVal = totalCell ? parseFloat(String(totalCell.textContent).replace(/[^0-9.]/g,'')) : 0;
-        const savings = 0; // Keep minimal; advanced per-line recompute can be integrated later if needed
-        const allowed = totalVal; // For approved entries, treat allowed ~= total (fees already embedded)
-        const tpaFees = 0;
+        const totalVal = totalCell ? parseMoney(totalCell.textContent) : 0;
+        const savingsAttr = currentRow?.getAttribute('data-savings');
+        const savings = savingsAttr ? parseFloat(savingsAttr) : 0;
+        const tpaFees = truncate2(savings * 0.165);
+        const allowed = truncate2(Math.max(totalVal - tpaFees, 0));
+        const invoiceTotal = truncate2(allowed + savings);
         const reduction = parseFloat(redAmount?.value || '');
         const isPartial = decisionSelect?.value === 'partial';
-        const showReduction = isPartial || decisionSelect?.value === 'full';
+        const isCovered = decisionSelect?.value === 'full';
+        const isNotCovered = decisionSelect?.value === 'none';
+        const showReduction = !isNotCovered; // show reductions for Covered and Partially Denied
         if (document.getElementById('summary-reduction-inline')) {
             document.getElementById('summary-reduction-inline').style.display = showReduction ? '' : 'none';
         }
-        const patientResp = isPartial && reduction > 0 ? reduction : (decisionSelect?.value === 'none' ? allowed : 0);
+        // If partial and user hasn't selected lines yet, try preset from Notes cell
+        if (isPartial && (!deniedFromSelected || deniedFromSelected <= 0)) {
+            const notesCell = currentRow?.querySelector('.notes');
+            const preset = notesCell ? parseLastMoneyToken(notesCell.textContent) : 0;
+            if (preset > 0) deniedFromSelected = preset;
+        }
+
+        const patientResp = isPartial
+            ? truncate2((deniedFromSelected||0) + (reduction>0?reduction:0))
+            : (isNotCovered ? invoiceTotal : (reduction>0 ? reduction : 0));
         const total = truncate2(allowed + tpaFees - (patientResp||0));
-        summaryContent.innerHTML = `
-            <div class="label">Invoice total</div><div class="value">${formatUSD(totalVal)}</div>
-            <div class="label">Savings</div><div class="value">${formatUSD(savings)}</div>
-            <div class="label">Allowed amount</div><div class="value">${formatUSD(allowed)}</div>
-            <div class="label">TPA fees</div><div class="value">${formatUSD(tpaFees)}</div>
-            ${patientResp>0?`<div class="label">Patient’s Responsibility</div><div class="value">${formatUSD(patientResp)}</div>`:''}
-            <div class="label">Total</div><div class="value">${formatUSD(total)}</div>
-        `;
+        const prLine = patientResp>0?`<div class="label">Patient’s Responsibility</div><div class="value">${formatUSD(patientResp)}</div>${(isPartial && reduction>0)?`<div class="subnote">${formatUSD(deniedFromSelected)} denied + ${formatUSD(reduction)} reduction</div>`:''}`:'';
+        if (isNotCovered) {
+            // Show only Patient's Responsibility for Not Covered
+            summaryContent.innerHTML = `
+                <div class="label">Patient’s Responsibility</div><div class="value">${formatUSD(totalVal)}</div>
+            `;
+        } else {
+            summaryContent.innerHTML = `
+                <div class="label">Invoice total</div><div class="value">${formatUSD(invoiceTotal)}</div>
+                <div class="label">Savings</div><div class="value">${formatUSD(savings)}</div>
+                <div class="label">Allowed amount</div><div class="value">${formatUSD(allowed)}</div>
+                <div class="label">TPA fees</div><div class="value">${formatUSD(tpaFees)}</div>
+                ${prLine}
+                <div class="label">Total</div><div class="value">${formatUSD(total)}</div>
+            `;
+        }
+        // Enable/disable confirm: if partial and reduction entered, require type
+        if (confirmBtn && decisionSelect) {
+            let enable = true;
+            const amountEntered = redAmount && redAmount.value !== '';
+            if ((decisionSelect.value === 'partial' || decisionSelect.value === 'full') && amountEntered && redType && !redType.value) enable = false;
+            confirmBtn.disabled = !enable;
+        }
     }
 
     decisionSelect?.addEventListener('change', () => {
@@ -105,6 +141,15 @@ document.addEventListener('DOMContentLoaded', () => {
     redAmount?.addEventListener('input', renderSummary);
     redType?.addEventListener('change', renderSummary);
     confirmBtn?.addEventListener('click', () => {
+        // Guard: if partial and reduction amount entered, require type selected
+        if (decisionSelect && decisionSelect.value === 'partial') {
+            const amountEntered = redAmount && redAmount.value !== '' && !isNaN(parseFloat(redAmount.value));
+            if (amountEntered && redType && !redType.value) {
+                // keep modal open and block confirm
+                confirmBtn.disabled = true;
+                return;
+            }
+        }
         // Minimal UX: reflect change in Decision cell and close
         const statusCell = currentRow?.querySelector('.status .status-badge');
         if (statusCell && decisionSelect) {
@@ -122,7 +167,13 @@ document.addEventListener('DOMContentLoaded', () => {
     denialModal?.querySelector('.modal-close')?.addEventListener('click', closeDenial);
 
     maConfirmPartial?.addEventListener('click', () => {
-        // For simplicity, proceed to denial reason after any selection
+        // Compute denied sum from selected checkboxes
+        const boxes = partialModal?.querySelectorAll('.line-checkbox:checked') || [];
+        deniedFromSelected = 0;
+        boxes.forEach(cb => {
+            const lbl = cb.nextElementSibling ? cb.nextElementSibling.textContent : '';
+            deniedFromSelected += parseLastMoneyToken(lbl);
+        });
         closePartial();
         if (denialModal) {
             denialModal.classList.add('active');
@@ -148,6 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 else if (txt.includes('partially')) decisionSelect.value = 'partial';
                 else if (txt.includes('not')) decisionSelect.value = 'none';
             }
+            deniedFromSelected = 0;
             openModal();
         });
     });

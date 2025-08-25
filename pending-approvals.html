@@ -14,7 +14,7 @@
 <body>
     <!-- Navigation Header -->
     <header class="navbar">
-    <nav class="nav-container">
+        <nav class="nav-container">
             <div class="nav-logo">
                 <img src="eurocenter.png" alt="Euro Center Logo" class="logo-image">
                 <button class="app-menu-trigger" aria-haspopup="true" aria-expanded="false">
@@ -25,7 +25,7 @@
                     <a href="index.html" role="menuitem"><i class="fas fa-home"></i> Home</a>
                     <a href="pending-approvals.html" role="menuitem"><i class="fas fa-list-check"></i> Pending Approvals</a>
                     <a href="my-approvals.html" role="menuitem"><i class="fas fa-user-check"></i> My Approvals</a>
-                    <a href="medical-records-tracker.html" role="menuitem"><i class="fas fa-file-medical"></i> Medical Records Tracker</a>
+                    <a href="medical-records.html" role="menuitem"><i class="fas fa-file-medical"></i> Medical Records Tracker</a>
                     <a href="all-entries.html" role="menuitem"><i class="fas fa-database"></i> All Entries</a>
                 </div>
             </div>
@@ -100,7 +100,7 @@
                     </div>
                     <div class="card-content">
                         <h3 class="card-number">1</h3>
-                        <p class="card-label">Urgent (15+ days)</p>
+                        <p class="card-label">Urgent (30+ days)</p>
                     </div>
                 </div>
             </div>
@@ -127,7 +127,7 @@
                             <th class="col-patient">PATIENT</th>
                             <th class="col-treatment">TREATMENT DATE</th>
                             <th class="col-status">STATUS GLOBO</th>
-                            <th class="col-payable">PAYABLE<br/>AMOUNT /<br/>FEES</th>
+                            <th class="col-payable">PAYABLE AMOUNT<br/><span style="font-weight:400;color:#9ca3af;">TPA FEES</span></th>
                             <th class="col-total">TOTAL</th>
                             <th class="col-claim">CLAIM IMAGE</th>
                             <th class="col-coverage">COVERAGE DECISION</th>
@@ -140,14 +140,10 @@
                             <td class="case-number">1587999</td>
                             <td class="client-id">909001245987</td>
                             <td class="patient-name">Frey Njordson</td>
-                            <td class="treatment-date">2023-10-15 /<br/>2023-10-15</td>
+                            <td class="treatment-date">2023-10-15</td>
                             <td class="status"><span class="status-badge pending">Pending</span></td>
-                            <td class="payable-amount">US$ 1.157,59<br/>/ US$ 114,54
-                                <div class="payable-actions">
-                                    <button class="btn-expand" aria-label="Show cost breakdown" data-breakdown="1">+</button>
-                                </div>
-                            </td>
-                            <td class="total-amount">US$ 1.329,72</td>
+                            <td class="payable-amount">US$ 1,329.72</td>
+                            <td class="total-amount">US$ 1,329.72</td>
                             <td class="claim-image">
                                 <i class="fas fa-file-pdf" style="color: #ff3b30; font-size: 24px;"></i>
                             </td>
@@ -160,188 +156,6 @@
                                         <option value="none">Not Covered</option>
                                     </select>
                                 </div>
-                                <span class="coverage-tag" hidden></span>
-                                <span class="reduction-tag" hidden></span>
-                            </td>
-                        </tr>
-                        <tr class="details-row" data-for="1" hidden>
-                            <td colspan="11">
-                                <div class="breakdown flat">
-                                    <div class="breakdown-title">Cost Breakdown</div>
-                                    <div class="breakdown-table">
-                                        <div class="breakdown-header">CPT</div>
-                                        <div class="breakdown-header">Description</div>
-                                        <div class="breakdown-header right">Price</div>
-                                        <div class="breakdown-header right">Savings</div>
-                                        <div class="breakdown-header right">Allowed</div>
-                                        <!-- Row 1 -->
-                                        <div class="breakdown-cell">71046</div>
-                                        <div class="breakdown-cell">Chest X-ray</div>
-                                        <div class="breakdown-cell right">US$ 200.00</div>
-                                        <div class="breakdown-cell right">US$ 20.00</div>
-                                        
-                                        <div class="breakdown-cell right">US$ 180.00</div>
-                                        <!-- Row 2 -->
-                                        <div class="breakdown-cell">80053</div>
-                                        <div class="breakdown-cell">Comprehensive Metabolic Panel</div>
-                                        <div class="breakdown-cell right">US$ 150.00</div>
-                                        <div class="breakdown-cell right">US$ 15.00</div>
-                                        <div class="breakdown-cell right">US$ 135.00</div>
-                                        <!-- Row 3 -->
-                                        <div class="breakdown-cell">99213</div>
-                                        <div class="breakdown-cell">Office visit (established pt.)</div>
-                                        <div class="breakdown-cell right">US$ 100.00</div>
-                                        <div class="breakdown-cell right">US$ 10.00</div>
-                                        <div class="breakdown-cell right">US$ 90.00</div>
-                                        <!-- Totals row -->
-                                        <div class="breakdown-cell"></div>
-                                        <div class="breakdown-cell bold right">TOTAL</div>
-                                        <div class="breakdown-cell right">US$ 450.00</div>
-                                        <div class="breakdown-cell right">US$ 45.00</div>
-                                        <div class="breakdown-cell right bold">US$ 405.00</div>
-                                    </div>
-                                    
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="days-count">12</td>
-                            <td class="uhap-id">14448793</td>
-                            <td class="case-number">1544798</td>
-                            <td class="client-id">909001547999</td>
-                            <td class="patient-name">Heimdall Odinsson</td>
-                            <td class="treatment-date">2023-09-11 /<br/>2023-09-11</td>
-                            <td class="status"><span class="status-badge pending">Pending</span></td>
-                            <td class="payable-amount">US$ 479,59 /<br/>US$ 18,31
-                                <div class="payable-actions">
-                                    <button class="btn-expand" aria-label="Show cost breakdown" data-breakdown="2">+</button>
-                                </div>
-                            </td>
-                            <td class="total-amount">US$ 497,90</td>
-                            <td class="claim-image">
-                                <i class="fas fa-file-pdf" style="color: #ff3b30; font-size: 24px;"></i>
-                            </td>
-                            <td class="coverage-decision">
-                                <div class="coverage-inline">
-                                    <select class="coverage-select" data-row="2">
-                                        <option value="">Select coverage</option>
-                                        <option value="full">Covered</option>
-                                        <option value="partial">Partially Denied</option>
-                                        <option value="none">Not Covered</option>
-                                    </select>
-                                </div>
-                                <span class="coverage-tag" hidden></span>
-                                <span class="reduction-tag" hidden></span>
-                            </td>
-                        </tr>
-                        <tr class="details-row" data-for="2" hidden>
-                            <td colspan="11">
-                                <div class="breakdown flat">
-                                    <div class="breakdown-title">Cost Breakdown</div>
-                                    <div class="breakdown-table">
-                                        <div class="breakdown-header">CPT</div>
-                                        <div class="breakdown-header">Description</div>
-                                        <div class="breakdown-header right">Price</div>
-                                        <div class="breakdown-header right">Savings</div>
-                                        <div class="breakdown-header right">Allowed</div>
-                                        
-                                        <!-- Row 1 -->
-                                        <div class="breakdown-cell">72100</div>
-                                        <div class="breakdown-cell">Spine X-ray</div>
-                                        <div class="breakdown-cell right">US$ 180.00</div>
-                                        <div class="breakdown-cell right">US$ 12.00</div>
-                                        <div class="breakdown-cell right">US$ 168.00</div>
-                                        <!-- Row 2 -->
-                                        <div class="breakdown-cell">81001</div>
-                                        <div class="breakdown-cell">Urinalysis</div>
-                                        <div class="breakdown-cell right">US$ 60.00</div>
-                                        <div class="breakdown-cell right">US$ 6.00</div>
-                                        <div class="breakdown-cell right">US$ 54.00</div>
-                                        <!-- Row 3 -->
-                                        <div class="breakdown-cell">99213</div>
-                                        <div class="breakdown-cell">Office visit (established pt.)</div>
-                                        <div class="breakdown-cell right">US$ 120.00</div>
-                                        <div class="breakdown-cell right">US$ 8.00</div>
-                                        <div class="breakdown-cell right">US$ 112.00</div>
-                                        <!-- Totals row -->
-                                        <div class="breakdown-cell"></div>
-                                        <div class="breakdown-cell bold right">TOTAL</div>
-                                        <div class="breakdown-cell right">US$ 360.00</div>
-                                        <div class="breakdown-cell right">US$ 26.00</div>
-                                        <div class="breakdown-cell right bold">US$ 334.00</div>
-                                    </div>
-                                    
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="days-count">20</td>
-                            <td class="uhap-id">14556870</td>
-                            <td class="case-number">1698752</td>
-                            <td class="client-id">909001366000</td>
-                            <td class="patient-name">Tyr Odinsson</td>
-                            <td class="treatment-date">2023-08-15 /<br/>2023-08-23</td>
-                            <td class="status"><span class="status-badge pending">Pending</span></td>
-                            <td class="payable-amount">US$ 287,47 /<br/>US$ 13,53
-                                <div class="payable-actions">
-                                    <button class="btn-expand" aria-label="Show cost breakdown" data-breakdown="3">+</button>
-                                </div>
-                            </td>
-                            <td class="total-amount">US$ 301,00</td>
-                            <td class="claim-image">
-                                <i class="fas fa-file-pdf" style="color: #ff3b30; font-size: 24px;"></i>
-                            </td>
-                            <td class="coverage-decision">
-                                <div class="coverage-inline">
-                                    <select class="coverage-select" data-row="3">
-                                        <option value="">Select coverage</option>
-                                        <option value="full">Covered</option>
-                                        <option value="partial">Partially Denied</option>
-                                        <option value="none">Not Covered</option>
-                                    </select>
-                                </div>
-                                <span class="coverage-tag" hidden></span>
-                                <span class="reduction-tag" hidden></span>
-                            </td>
-                        </tr>
-                        <tr class="details-row" data-for="3" hidden>
-                            <td colspan="11">
-                                <div class="breakdown flat">
-                                    <div class="breakdown-title">Cost Breakdown</div>
-                                    <div class="breakdown-table">
-                                        <div class="breakdown-header">CPT</div>
-                                        <div class="breakdown-header">Description</div>
-                                        <div class="breakdown-header right">Price</div>
-                                        <div class="breakdown-header right">Savings</div>
-                                        <div class="breakdown-header right">Allowed</div>
-                                        
-                                        <!-- Row 1 -->
-                                        <div class="breakdown-cell">73090</div>
-                                        <div class="breakdown-cell">Forearm X-ray</div>
-                                        <div class="breakdown-cell right">US$ 140.00</div>
-                                        <div class="breakdown-cell right">US$ 14.00</div>
-                                        <div class="breakdown-cell right">US$ 126.00</div>
-                                        <!-- Row 2 -->
-                                        <div class="breakdown-cell">80061</div>
-                                        <div class="breakdown-cell">Lipid panel</div>
-                                        <div class="breakdown-cell right">US$ 80.00</div>
-                                        <div class="breakdown-cell right">US$ 5.00</div>
-                                        <div class="breakdown-cell right">US$ 75.00</div>
-                                        <!-- Row 3 -->
-                                        <div class="breakdown-cell">99212</div>
-                                        <div class="breakdown-cell">Office visit (brief)</div>
-                                        <div class="breakdown-cell right">US$ 90.00</div>
-                                        <div class="breakdown-cell right">US$ 6.00</div>
-                                        <div class="breakdown-cell right">US$ 84.00</div>
-                                        <!-- Totals row -->
-                                        <div class="breakdown-cell"></div>
-                                        <div class="breakdown-cell bold right">TOTAL</div>
-                                        <div class="breakdown-cell right">US$ 310.00</div>
-                                        <div class="breakdown-cell right">US$ 25.00</div>
-                                        <div class="breakdown-cell right bold">US$ 285.00</div>
-                                    </div>
-                                    
-                                </div>
                             </td>
                         </tr>
                     </tbody>
@@ -349,104 +163,6 @@
             </div>
         </div>
     </main>
-
-    <!-- Partial Coverage Modal -->
-    <div id="partial-coverage-modal" class="modal-overlay">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Partial Coverage - Select Denied Lines</h3>
-                <button class="modal-close">&times;</button>
-            </div>
-            <div class="modal-body">
-                <p>Select which payment lines should be denied:</p>
-                <div class="payment-lines">
-                    <div class="payment-line">
-                        <input type="checkbox" id="line1" class="line-checkbox">
-                        <label for="line1">Line 1: Office visit - US$ 133.78</label>
-                    </div>
-                    <div class="payment-line">
-                        <input type="checkbox" id="line2" class="line-checkbox">
-                        <label for="line2">Line 2: Bloodwork - US$ 66.89</label>
-                    </div>
-                    <div class="payment-line">
-                        <input type="checkbox" id="line3" class="line-checkbox">
-                        <label for="line3">Line 3: Ecography - US$ 100.33</label>
-                    </div>
-                </div>
-                <button id="confirm-partial" class="btn-confirm">Confirm Selection</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Denial Reason Modal -->
-    <div id="denial-reason-modal" class="modal-overlay">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Select Denial Reason</h3>
-                <button class="modal-close">&times;</button>
-            </div>
-            <div class="modal-body">
-                <p>Choose the reason for denial:</p>
-                <div class="denial-reasons">
-                    <div class="denial-option">
-                        <input type="radio" id="not-covered" name="denial-reason" value="not-covered">
-                        <label for="not-covered">Not a covered service</label>
-                    </div>
-                    <div class="denial-option">
-                        <input type="radio" id="exceed-benefit" name="denial-reason" value="exceed-benefit">
-                        <label for="exceed-benefit">Exceed maximum benefit</label>
-                    </div>
-                    <div class="denial-option">
-                        <input type="radio" id="pre-existing" name="denial-reason" value="pre-existing">
-                        <label for="pre-existing">Pre-existing</label>
-                    </div>
-                </div>
-                <button id="confirm-denial" class="btn-confirm">Confirm Reason</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Patient Responsibility Modal -->
-    <div id="patient-resp-modal" class="modal-overlay">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Enter Patient Responsibility (US$)</h3>
-                <button class="modal-close" data-close="patient">&times;</button>
-            </div>
-            <div class="modal-body">
-                <div class="form-group">
-                    <input id="patient-resp-input" type="number" min="0" step="0.01" placeholder="e.g. 50.00" style="width:100%;padding:12px 14px;border:1px solid #e5e7eb;border-radius:8px;font-size:14px;">
-                </div>
-                <button id="confirm-patient-resp" class="btn-confirm">Confirm</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Coverage Summary Modal -->
-    <div id="coverage-summary-modal" class="modal-overlay">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Confirm Coverage Summary</h3>
-                <button class="modal-close" data-close="coverage">&times;</button>
-            </div>
-            <div class="modal-body">
-                <div id="coverage-summary-content" class="summary-lines"></div>
-                <div id="summary-reduction-inline" class="reduction-inline" style="margin-top:14px;">
-                    <select id="summary-reduction-type" class="reduction-select" style="width:160px;">
-                        <option value="">Add reduction</option>
-                        <option value="copay">Co-pay</option>
-                        <option value="deductible">Deductible</option>
-                        <option value="maximum">Maximum reached</option>
-                    </select>
-                    <input id="summary-reduction-amount" type="number" min="0" step="0.01" placeholder="US$ amount" style="padding:8px 12px;border:1px solid #e5e7eb;border-radius:8px;font-size:12px;width:140px;">
-                </div>
-                <button id="confirm-coverage-summary" class="btn-confirm" style="margin-top:14px;">Confirm Decision</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Coverage Toast -->
-    <div id="coverage-toast" class="coverage-toast" aria-live="polite" aria-atomic="true"></div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -459,6 +175,5 @@
 
     <!-- JavaScript -->
     <script src="script.js"></script>
-    <script src="pending-approvals.js"></script>
 </body>
 </html>
