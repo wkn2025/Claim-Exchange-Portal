@@ -923,3 +923,43 @@ img {
 * {
     transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
 }
+
+/* ===== Missing table/coverage utilities restored ===== */
+.payable-stack { display: flex; flex-direction: column; align-items: center; gap: 6px; width: 100%; max-width: 120px; margin: 0 auto; }
+.payable-divider { width: 100%; max-width: 110px; height: 1px; background: #e5e7eb; }
+.payable-allowed { font-weight: 500; color: #111827; line-height: 1; }
+.payable-fees { color: #6b7280; line-height: 1; }
+
+.payable-actions { margin-top: 6px; display: flex; justify-content: center; }
+.btn-expand { width: 26px; height: 26px; border-radius: 50%; border: 1px solid #d1d5db; background: #ffffff; cursor: pointer; font-weight: 700; line-height: 1; display: inline-flex; align-items: center; justify-content: center; transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease; position: relative; }
+.btn-expand:hover { background: #f3f4f6; transform: rotate(90deg) scale(1.06); box-shadow: 0 4px 10px rgba(0,0,0,0.06); }
+.btn-expand::before { content: '+'; font-weight: 700; color: #374151; transform: rotate(-90deg); }
+.btn-expand.expanded::before { content: '-'; transform: none; }
+
+.breakdown { margin-top: 10px; border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; background: #ffffff; }
+.breakdown.flat { border: 1px solid #eff2f5; background: #fafafa; }
+.breakdown-title { font-family: 'Open Sans', sans-serif; font-weight: 600; color: #111827; margin-bottom: 10px; }
+.breakdown-table { display: grid; grid-template-columns: 120px 1fr 120px 120px 120px; gap: 8px 12px; align-items: center; }
+.breakdown-header { font-weight: 700; color: #111827; border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; }
+.breakdown-cell { padding: 6px 0; border-bottom: 1px dashed #e5e7eb; color: #374151; }
+.breakdown-cell.right, .breakdown-header.right { text-align: right; }
+.breakdown-total-row .breakdown-cell { border-bottom: none; padding-top: 8px; }
+
+.coverage-select:focus { outline: none; border-color: var(--primary-green); }
+.reduction-select { padding: 8px 12px; border: 1px solid #505050; border-radius: 8px; font-family: 'Roboto', sans-serif; font-size: 14px; background: white; color: #000; cursor: pointer; height: 35px; }
+.reduction-select:focus { outline: none; border-color: var(--primary-green); }
+
+.coverage-tag, .reduction-tag { display: inline-flex; align-items: center; gap: 6px; margin-top: 6px; padding: 6px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; background: #eef2ff; color: #3730a3; }
+
+.btn-edit-coverage { background: #ffffff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 6px 10px; cursor: pointer; color: #374151; transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.2s ease; }
+.btn-edit-coverage:hover { background: #f3f4f6; transform: translateY(-1px); box-shadow: 0 6px 14px rgba(0,0,0,0.08); }
+
+.coverage-toast { position: fixed; right: 20px; top: 90px; background: #ffffff; border: 1px solid #e5e7eb; box-shadow: 0 8px 24px rgba(0,0,0,0.12); border-radius: 12px; padding: 16px 20px; min-width: 260px; transform: translateX(120%); opacity: 0; transition: transform 0.35s ease, opacity 0.35s ease; z-index: 1100; }
+.coverage-toast.show { transform: translateX(0); opacity: 1; }
+.coverage-toast .title { font-weight: 700; color: #111827; margin-bottom: 6px; }
+.coverage-toast .desc { color: #374151; font-size: 14px; }
+
+.entries-footer { margin-top: 10px; display: flex; align-items: center; gap: 12px; justify-content: flex-end; width: 100%; }
+.entries-footer .entries-link { display: inline-flex; align-items: center; justify-content: center; min-width: 34px; height: 28px; padding: 0 10px; border: 1px solid #e5e7eb; border-radius: 999px; color: #374151; text-decoration: none; font-family: 'Open Sans', sans-serif; font-size: 13px; transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease; }
+.entries-footer .entries-link:hover { background: #f3f4f6; transform: translateY(-1px); }
+.entries-footer .entries-active { background: var(--primary-green); color: #ffffff; border-color: var(--primary-green); }
